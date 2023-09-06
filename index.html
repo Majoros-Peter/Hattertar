@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <form>
+        <label>Kapacitás:</label>
+        <input type="number" value="2000" id="Kapacitás">
+        <select id="KapacitásJel">
+            <option>KB</option>
+            <option selected>MB</option>
+            <option>GB</option>
+            <option>TB</option>
+        </select><br>
+
+        <label>Átviteli sebesség:</label><br>
+
+        <input type="range" min="10" max="5000" value="3200" id="Sebesség">
+        <select id="SebességJel">
+            <option>KBps</option>
+            <option selected>MBps</option>
+            <option>GBps</option>
+            <option>TBps</option>
+        </select><br>
+
+        <input type="button" value="Számol" onclick="Szamol()"><br>
+
+        <p id="Eredmény">--- sec</p>
+    </form>
+</body>
+</html>
